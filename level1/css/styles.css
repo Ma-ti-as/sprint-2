@@ -1,0 +1,24 @@
+.fatBorder{
+    border-width: 3px !important; /*sobreesciu estil de border de bootstrap*/
+}
+.link-gold:hover{
+    color:gold !important;
+}
+.link-dark:hover{
+    color:rgb(58, 57, 54) !important;
+}
+.link-blue:hover{
+    color:rgb(24, 198, 211) !important;
+}
+
+
+/*p{
+    text-align: center; 
+    color:#f649a7;
+    text-shadow: 2px 2px #3c52d1;
+    padding-bottom: 5px;
+    
+}*/
+
+
+
