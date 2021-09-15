@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sprint 2 level 1</title>
-
+    <link rel="icon" type="img/png" href="logo.png" size="16x16 32x32">
     <!-- Bootstrap CSS desde cdn-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <!--Arxius desde carpeta local-->
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+  
+  <!--Arxius desde carpeta local
+    <link rel="stylesheet" href="css/bootstrap.css">-->
     <link rel="stylesheet" href="css/styles.css">
     
-   
+    
     
   </head>
   <body class="bg-info">
@@ -20,8 +21,59 @@
     <!-------------------------------------------Contenidor principal---------------------------------->
     
     <main class="container-fluid " style="padding:0;"><!--afegit style per eliminar marges laterals de 'container-fluid'-->
-      
-      
+                           <!--Finestres modals dels botons Login i registre-->
+      <div class="container">
+        <div class="modal fade" id="LoginModal1" tabindex="-1" aria-labelledby="lLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="lLabel">Login</h5>
+                
+              </div>
+              <div class="modal-body text-secondary">
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Nom d'usuari</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success ">Enviar</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="LoginModal2" tabindex="-1" aria-labelledby="lLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="lLabel">Registre</h5>
+                
+              </div>
+              <div class="modal-body  text-secondary">
+                <div class="form-floating  mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Nou usuari</label>
+                </div>
+                <div class="form-floating ">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                  <label for="floatingPassword">Adreça email</label>
+                </div>
+                <p class="mt-2 fst-italic fw-lighter small">*En breu rebràs un email amb el password</p>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success ">Enviar</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-------------------------------------------Navegador---------------------------------->
 
 
@@ -44,72 +96,26 @@
               <li class="nav-item"><a href="#" class="nav-link link-dark text-warning">CONTACTAR</a></li>
             </ul>
           </div>
-
-          <div class="modal fade" id="LoginModal1" tabindex="-1" aria-labelledby="lLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="lLabel">Login</h5>
-                  
-                </div>
-                <div class="modal-body text-secondary">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Nom d'usuari</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-warning ">Enviar</button>
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="LoginModal2" tabindex="-1" aria-labelledby="lLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="lLabel">Registre</h5>
-                  
-                </div>
-                <div class="modal-body  text-secondary">
-                  <div class="form-floating  mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Nou usuari</label>
-                  </div>
-                  <div class="form-floating ">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Adreça email</label>
-                  </div>
-                  <p class="mt-2 fst-italic fw-lighter small">*En breu rebràs un email amb el password</p>
-                  
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-warning ">Enviar</button>
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
+                              <!----------Dos botons amb finestra modal-------------------->
+          
           <ul class="navbar-nav col-sm-2 d-block text-center">
             <li class="nav-item"><a href="#LoginModal1"  class="nav-link link-gold" data-bs-toggle="modal" >Login</a></li>
             <li class="nav-item"><a href="#LoginModal2"  class="nav-link link-gold" data-bs-toggle="modal" >Registre</a></li>
           </ul>
+            
         </section>
       </nav>
-
+      
+<!-------------------------------------Slider d'imatges----------------------------------------------->
       <section class="fatBorder border-bottom border-warning ">
-        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div id="demo" class="carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
             <button type="button" data-bs-target="#demo" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
+          
           <div class="carousel-inner">
             
             <div class="carousel-item active">
@@ -155,38 +161,47 @@
         
         </div>
       </section>
-      <section class="mt-2 mb-2 row">
+      <!------------------------------Zona de cards--------------------------------->
+      
+      <section class="row"style="margin: 10px;" >
         
-        <div class="w-50 col m-2  card">
-          <div class="card-header bg-white">
-            <h5 class="card-text">Sobre mi</h5>
-          </div>
-          <img src="img/matias-portrait-bio.jpg " class="card-img-top d-block w-100 p-2" alt="...">
-          <div class="card-body bg-white text-secondary text-center">
-            
-            <p class="card-text">La ciutat creix</p>
-            <a href="#" class="btn btn-outline-danger">Day city landscapes</a>
-          </div>
+        <div class="col-md-6" >
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <img src="img/matias-portrait-bio.jpg " class="card-img-top shadow-sm p-3 mb-5 rounded" alt="...">
+              <p class="card-text text-secondary">Quatre línies explicant d'on vinc, què faig i de quina manera treballo</p>
+              <a class="btn btn-outline-danger " href="#">Sobre mi</a>
+            </div>
         </div>
+        </div> 
         
-        <div class="w-50 col card ">
-          
-          <img src="img/sobre_mi.jpg " class="card-img-top d-block w-100 p-2" alt="...">
-          <div class="card-body bg-whitet text-secondary text-center">
-            
-            <p class="card-text">La ciutat creix</p>
-            <a href="#" class="btn btn-outline-danger">Day city landscapes</a>
+        <div class="col-md-6">
+            <div class="card h-100">
+              <div class="card-body text-center">
+                <img src="img/sobre_mi.jpg" class="card-img-top shadow-sm p-3 mb-5 rounded" alt="...">
+                <p class="card-text text-secondary">Petit formulari per contactar i una message box per fer cinc cèntims de la consulta</p>
+                <a class="btn btn-outline-danger " href="#">Contactar</a>
+              </div>
+            </div>
           </div>
-        </div>
-    </section>
+      </section>
+      <section class="row mb-5 ms-4 me-4 border-start border-end border-top border-bottom border-dark">
+        <div class="col-md-6 bg-light">paleta de colors emprada</div>
+        <div class="col-md-6 bg-info">info</div>
+        <div class="col-md-6 bg-warning ">warning</div>
+        <div class="col-md-6 bg-danger">danger</div>
+        <div class="col-md-6 bg-secondary">secondary</div>
+        <div class="col-md-6 bg-success">success</div>
+      </section>
       
       
-      
+       
 
       
-      <!--<footer class="footer bg-dark"style="height:100px;">
+      <footer class="footer d-flex justify-content-center bg-dark" style="height:100px;">
+        <p class="text-secondary  small align-self-center">tots el drets haguts i per haver, sacs de cookies i molt d'amor</p>
 
-      </footer>-->
+      </footer>
       
       
 
