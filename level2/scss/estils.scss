@@ -1,0 +1,28 @@
+/*Colors de bootstrap sobreescrits*/
+
+$principal: rgb(35, 40, 64);
+$textNav:rgb(246, 73, 167);
+$textGeneral: rgb(163, 202, 205);
+$textBotons: rgb(89, 223, 127);
+$fonsDrop:rgb(60, 82, 209);
+$primaryFals:rgb(34, 90, 79);
+$lightFals:rgb(248, 246, 215);
+$darkFals:rgb(35, 40, 64);
+$mutedFals:rgb(110, 2, 159);
+$whiteFals:rgb(219, 224, 248);
+
+$primary:$primaryFals;
+$secondary: $textGeneral;
+$success: $fonsDrop;
+$danger: $textBotons;
+$warning: $textNav;
+$info: $principal;
+$light:$lightFals;
+$dark:$darkFals;
+$muted:$mutedFals;
+$white:$whiteFals;
+
+
+
+
+@import "../scss/bootstrap"; 

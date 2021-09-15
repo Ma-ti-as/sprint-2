@@ -1,0 +1,31 @@
+.fatBorder{
+  border-bottom-style: dashed !important; /*sobreesciu estil de border de bootstrap*/
+}
+.fatBorder2{
+  border-top-style: dashed !important; /*sobreesciu estil de border de bootstrap*/
+}
+.link-DarkBlue:hover{
+  color:rgb(60, 82, 209) !important;
+}
+.link-green:hover{
+  color:rgb(149, 202, 164) !important;
+}
+.link-blue:hover{
+  color:rgb(24, 198, 211) !important;
+}
+.link-pink:hover{
+  color:rgb(246, 73, 167) !important;
+  border-bottom:dotted 2px;
+}
+.textGuay{
+  text-shadow: 2px 2px  #3c52d1;
+  padding-bottom: 5px;
+}
+.botonGuay:hover{
+  box-shadow: 0px 0px 10px 2px rgb(246, 73, 167);
+}
+.botonGuay2:hover{
+  border-radius: 60%;
+  box-shadow: 0 0 10px 2px rgb(246, 73, 167), 0 0 20px 4px rgb(89, 223, 127), 0 0 40px 4px rgb(24, 198, 211);
+}
+
